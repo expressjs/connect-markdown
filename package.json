@@ -1,0 +1,41 @@
+{
+  "name": "connect-markdown",
+  "version": "0.0.1-aphal",
+  "description": "Auto convert markdown to html for connect.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test-all",
+    "blanket": { 
+      "pattern": "//^((?!(node_modules|test)).)*$/",
+      "data-cover-flags": {
+        "debug": false
+      }
+    },
+    "travis-cov": {
+      "threshold": 100
+    }
+  },
+  "dependencies": {
+    "marked": "0.2.9"
+  },
+  "devDependencies": {
+    "should": "*",
+    "blanket": "*",
+    "travis-cov": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*",
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fengmk2/connect-markdown.git"
+  },
+  "keywords": [
+    "connect-markdown", "markdown", "connect", "middleware", "marked"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "author": "fengmk2 <fengmk2@gmail.com>",
+  "license": "MIT"
+}
