@@ -32,6 +32,20 @@ app.use('/docs', connectMarkdown({
 app.listen();
 ```
 
+## Authors
+
+```bash
+$ git summary 
+
+ project  : connect-markdown
+ repo age : 14 hours
+ active   : 1 days
+ commits  : 3
+ files    : 15
+ authors  : 
+     3  fengmk2                 100.0%
+```
+
 ## License 
 
 (The MIT License)
