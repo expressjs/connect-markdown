@@ -11,7 +11,7 @@
  */
 
 var connect = require('connect');
-var connectMarkdown = require('connect-markdown');
+var connectMarkdown = require('../');
 
 var app = connect();
 
@@ -22,6 +22,12 @@ var app = connect();
 app.use('/docs', connectMarkdown({
   root: __dirname + '/docs',
   layout: __dirname + '/docs/layout.html', // {TITLE}, {BODY}
+  cache: false,
 }));
 
-app.listen();
+module.exports = app;
+
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(1984);
+  console.log('app listening on 1984, http://localhost:1984/docs');
+}

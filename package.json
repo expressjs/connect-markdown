@@ -6,7 +6,7 @@
   "scripts": {
     "test": "make test-all",
     "blanket": { 
-      "pattern": "//^((?!(node_modules|test)).)*$/",
+      "pattern": "connect-markdown/lib",
       "data-cover-flags": {
         "debug": false
       }
@@ -16,9 +16,12 @@
     }
   },
   "dependencies": {
-    "marked": "0.2.9"
+    "marked": "0.2.9",
+    "eventproxy": ">=0.2.5"
   },
   "devDependencies": {
+    "connect": "*",
+    "supertest": "*",
     "should": "*",
     "blanket": "*",
     "travis-cov": "*",

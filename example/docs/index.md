@@ -1,9 +1,13 @@
-connect-markdown [![Build Status](https://secure.travis-ci.org/fengmk2/connect-markdown.png)](http://travis-ci.org/fengmk2/connect-markdown) [![Coverage Status](https://coveralls.io/repos/fengmk2/connect-markdown/badge.png)](https://coveralls.io/r/fengmk2/connect-markdown) [![Build Status](https://drone.io/github.com/fengmk2/connect-markdown/status.png)](https://drone.io/github.com/fengmk2/connect-markdown/latest)
+connect-markdown
 =======
+
+[![Build Status](https://secure.travis-ci.org/fengmk2/connect-markdown.png)](http://travis-ci.org/fengmk2/connect-markdown) [![Coverage Status](https://coveralls.io/repos/fengmk2/connect-markdown/badge.png)](https://coveralls.io/r/fengmk2/connect-markdown) [![Build Status](https://drone.io/github.com/fengmk2/connect-markdown/status.png)](https://drone.io/github.com/fengmk2/connect-markdown/latest)
 
 ![logo](https://raw.github.com/fengmk2/connect-markdown/master/logo.png)
 
 Auto convert markdown to html for connect.
+
+* [test rest api doc](/docs/rest)
 
 ## Install
 
@@ -29,6 +33,12 @@ app.use('/docs', connectMarkdown({
 
 app.listen();
 ```
+
+## TODO
+
+* [ ] cache layout and markdown page
+* [ ] http 304 cache, etag
+* [ ] benchmarks
 
 ## License 
 
