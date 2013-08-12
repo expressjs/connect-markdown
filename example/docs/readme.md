@@ -1,4 +1,4 @@
-connect-markdown
+connect-markdown readme
 =======
 
 [![Build Status](https://secure.travis-ci.org/fengmk2/connect-markdown.png)](http://travis-ci.org/fengmk2/connect-markdown) [![Coverage Status](https://coveralls.io/repos/fengmk2/connect-markdown/badge.png)](https://coveralls.io/r/fengmk2/connect-markdown) [![Build Status](https://drone.io/github.com/fengmk2/connect-markdown/status.png)](https://drone.io/github.com/fengmk2/connect-markdown/latest)
@@ -33,10 +33,6 @@ app.use('/docs', connectMarkdown({
 
 app.listen(1984);
 ```
-
-## TODO
-
-* [ ] cache for performance
 
 ## Authors
 

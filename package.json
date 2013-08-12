@@ -31,7 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fengmk2/connect-markdown.git"
+    "url": "git://github.com/fengmk2/connect-markdown.git",
+    "web": "https://github.com/fengmk2/connect-markdown"
+  },
+  "bugs": {
+    "url": "https://github.com/fengmk2/connect-markdown/issues",
+    "email": "fengmk2@gmail.com"
   },
   "keywords": [
     "connect-markdown", "markdown", "connect", "middleware", "marked"
@@ -39,6 +44,6 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "author": "fengmk2 <fengmk2@gmail.com>",
+  "author": "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
   "license": "MIT"
 }

@@ -55,23 +55,32 @@ describe('connect-markdown.test.js', function () {
   });
 
   describe('GET /docs/rest', function () {
-    it('should GET /rest 200', function (done) {
+    it('should GET /docs/rest 200', function (done) {
       request(app)
       .get('/docs/rest')
       .expect(/<title>RESTful API<\/title>/)
       .expect(200, done);
     });
 
-    it('should GET /rest/ 404', function (done) {
+    it('should GET /docs/rest/ 404', function (done) {
       request(app)
       .get('/docs/rest/')
       .expect(404, done);
     });
 
-    it('should GET /rest.md 404', function (done) {
+    it('should GET /docs/rest.md 404', function (done) {
       request(app)
       .get('/docs/rest.md')
       .expect(404, done);
+    });
+  });
+
+  describe('Change indexName to readme', function () {
+    it('should GET /docs2 => readme.md', function (done) {
+      request(app)
+      .get('/docs2')
+      .expect(/<title>connect-markdown readme<\/title>/)
+      .expect(200, done);
     });
   });
 });

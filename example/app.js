@@ -16,13 +16,24 @@ var connectMarkdown = require('../');
 var app = connect();
 
 /**
- * GET /docs      <= marked() = /docs/index.md 
- * GET /docs/rest <= marked() = /docs/rest.md
+ * GET /docs       <= marked() = /docs/index.md 
+ * GET /docs/rest  <= marked() = /docs/rest.md
  */
 app.use('/docs', connectMarkdown({
   root: __dirname + '/docs',
   layout: __dirname + '/docs/layout.html', // {TITLE}, {BODY}
   cache: false,
+}));
+
+/**
+ * GET /docs2      <= marked() = /docs/readme.md 
+ * GET /docs/rest  <= marked() = /docs/rest.md
+ */
+app.use('/docs2', connectMarkdown({
+  root: __dirname + '/docs',
+  layout: __dirname + '/docs/layout.html', // {TITLE}, {BODY}
+  cache: false,
+  indexName: 'readme'
 }));
 
 module.exports = app;
