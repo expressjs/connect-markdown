@@ -29,6 +29,7 @@ describe('connect-markdown.test.js', function () {
     it('should GET /docs status 200', function (done) {
       request(app)
       .get('/docs')
+      .expect('Content-Type', 'text/html; charset=utf-8')
       .expect(/<title>connect-markdown<\/title>/)
       .expect(200, done);
     });
@@ -36,6 +37,7 @@ describe('connect-markdown.test.js', function () {
     it('should GET /docs/ status 200', function (done) {
       request(app)
       .get('/docs/')
+      .expect('Content-Type', 'text/html; charset=utf-8')
       .expect(/<title>connect-markdown<\/title>/)
       .expect(200, done);
     });
@@ -43,6 +45,7 @@ describe('connect-markdown.test.js', function () {
     it('should GET /docs/index status 200', function (done) {
       request(app)
       .get('/docs/index')
+      .expect('Content-Type', 'text/html; charset=utf-8')
       .expect(/<title>connect-markdown<\/title>/)
       .expect(200, done);
     });
@@ -79,6 +82,7 @@ describe('connect-markdown.test.js', function () {
     it('should GET /docs2 => readme.md', function (done) {
       request(app)
       .get('/docs2')
+      .expect('Content-Type', 'text/html; charset=utf-8')
       .expect(/<title>connect-markdown readme<\/title>/)
       .expect(200, done);
     });
