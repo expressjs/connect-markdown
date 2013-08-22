@@ -44,12 +44,13 @@ app.listen(1984);
 $ git summary 
 
  project  : connect-markdown
- repo age : 14 hours
- active   : 1 days
- commits  : 3
- files    : 15
+ repo age : 12 days
+ active   : 3 days
+ commits  : 8
+ files    : 17
  authors  : 
-     3  fengmk2                 100.0%
+     7  fengmk2                 87.5%
+     1  dead-horse              12.5%
 ```
 
 ## License 
