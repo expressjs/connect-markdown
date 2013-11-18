@@ -3,6 +3,8 @@ connect-markdown
 
 [![Build Status](https://secure.travis-ci.org/fengmk2/connect-markdown.png)](http://travis-ci.org/fengmk2/connect-markdown) [![Coverage Status](https://coveralls.io/repos/fengmk2/connect-markdown/badge.png)](https://coveralls.io/r/fengmk2/connect-markdown) [![Build Status](https://drone.io/github.com/fengmk2/connect-markdown/status.png)](https://drone.io/github.com/fengmk2/connect-markdown/latest)
 
+[![NPM](https://nodei.co/npm/connect-markdown.png?downloads=true&stars=true)](https://nodei.co/npm/connect-markdown/)
+
 ![logo](https://raw.github.com/fengmk2/connect-markdown/master/logo.png)
 
 Auto convert markdown to html for connect.
@@ -22,7 +24,7 @@ var connectMarkdown = require('connect-markdown');
 var app = connect();
 
 /**
- * GET /docs      <= marked() = /docs/index.md 
+ * GET /docs      <= marked() = /docs/index.md
  * GET /docs/rest <= marked() = /docs/rest.md
  */
 app.use('/docs', connectMarkdown({
@@ -41,19 +43,19 @@ app.listen(1984);
 ## Authors
 
 ```bash
-$ git summary 
+$ git summary
 
  project  : connect-markdown
  repo age : 12 days
  active   : 3 days
  commits  : 8
  files    : 17
- authors  : 
+ authors  :
      7  fengmk2                 87.5%
      1  dead-horse              12.5%
 ```
 
-## License 
+## License
 
 (The MIT License)
 
